@@ -19,8 +19,8 @@ Create a new docker container and pull the image.
   /opt/amber/config to the config directory you created earlier
   /opt/amber/data to the data directory you created above
 
-# Note:
+# Note 1:
 The config Json file sets the timing of attempts to get the latest 5 minute prices from Amber. In the example you will see it tries timne the containers time = the seconds in the second field when the minutes also match. It uses a CRON like pattern. Once the App has confirmed an actual value for the current 5min it will stop polling the Amber API until the next 5 min cycle starts.
 
-#Note: 
+# Note 2: 
 The Amber RestAPIs that we use for all the data requests do have hard limits. Currently, Amber restricts you to 50 RestAPI calls each 5 minutes. So be aware of this particularly if you are running multiple systems requesting and hitting the API!!
